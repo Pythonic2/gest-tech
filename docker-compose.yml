@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  gesttech:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    pull_policy: build
+
+    networks:
+      - cloudflare_default
+
+networks:
+  cloudflare_default:
+    external: true
