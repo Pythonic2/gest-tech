@@ -66,7 +66,7 @@ class HomeView(TemplateView):
         return render(request,'index.html',context)
 class SobreView(TemplateView):
     
-    template_name = "sobre.html"
+    template_name = "about.html"
     def get_context_data(self, **kwargs):
         kwargs['mostrar'] = 'd-none'
         kwargs['form'] = ContactForm()
