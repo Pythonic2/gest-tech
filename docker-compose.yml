@@ -12,8 +12,8 @@ services:
     pull_policy: build
 
     networks:
-      - cloudflare_default
+      - pi_default
 
 networks:
-  cloudflare_default:
+  pi_default:
     external: true
