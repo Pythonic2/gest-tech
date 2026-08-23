@@ -7,7 +7,9 @@ authors = [
     { name = "Pythonic2", email = "igoormarinhosilva@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "python-dotenv>=1.2.3",
+]
 
 [project.scripts]
 gest-tech = "gest_tech:main"

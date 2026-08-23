@@ -14,5 +14,8 @@ RUN pip install -r requirements.txt
 # Copy the rest of the application to the container
 COPY . .
 
+# Run the initialization commands before starting the application
+ENTRYPOINT ["sh", "/app/entrypoint.sh"]
+
 # Run the application
-CMD ["python", "manage.py", "runserver"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
