@@ -4,7 +4,7 @@ FROM python:3.14
 # Set up the working directory
 WORKDIR /app
 
-EXPOSE 8000
+EXPOSE 8001
 # Copy the requirements file to the container
 COPY requirements.txt .
 
@@ -18,4 +18,4 @@ COPY . .
 ENTRYPOINT ["sh", "/app/entrypoint.sh"]
 
 # Run the application
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]
