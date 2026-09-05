@@ -1,7 +1,10 @@
 version: '3.8'
 services:
   gesttech:
-    build: .
+    build:
+      context: .
+      no_cache: true
+      pull: true
     volumes:
       - .:/app
     ports:
