@@ -5,8 +5,6 @@ services:
       context: .
       no_cache: true
       pull: true
-    volumes:
-      - .:/app
     ports:
       - "8001:8001"
     environment:
