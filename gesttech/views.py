@@ -72,7 +72,6 @@ class SobreView(TemplateView):
         kwargs['form'] = ContactForm()
         
         return super().get_context_data(**kwargs)
-    
     def post(self,request):
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -82,3 +81,7 @@ class SobreView(TemplateView):
             telefone = form['phone_number'].value()
             menssagem = form['message'].value()
             form = ContactForm()
+
+
+class AutomationView(TemplateView):
+    template_name = "automation.html"

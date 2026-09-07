@@ -1,0 +1,87 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Automação de processos | GEST TECH MARINHO</title>
+    <meta name="description" content="Automação de processos, RPA, integrações e rotinas sob medida para reduzir tarefas manuais e dar mais controle à operação.">
+    <meta name="theme-color" content="#071a2d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}?v=20260907-1" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header automation-hero" id="inicio">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3 px-lg-5">
+            <div class="container-xl">
+                <a href="/" class="navbar-brand"><span class="brand-mark">GT</span><span class="brand-name">GEST TECH <strong>MARINHO</strong></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <div class="navbar-nav ms-auto align-items-lg-center">
+                        <a href="#o-que-automatizar" class="nav-link">O que automatizar</a>
+                        <a href="#beneficios" class="nav-link">Benefícios</a>
+                        <a href="#processo" class="nav-link">Como funciona</a>
+                        <a href="/" class="nav-link">Página inicial</a>
+                        <a data-whatsapp target="_blank" rel="noopener" class="btn btn-primary nav-cta">Mapear um processo</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-xl hero-content">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <span class="eyebrow"><i></i> AUTOMAÇÃO DE PROCESSOS · RPA</span>
+                    <h1>Menos tarefa manual. <span>Mais operação sob controle.</span></h1>
+                    <p class="hero-lead">Transformamos rotinas repetitivas em fluxos confiáveis, monitorados e adequados à realidade da sua empresa.</p>
+                    <div class="hero-actions">
+                        <div class="hero-primary-action"><a data-whatsapp target="_blank" rel="noopener" class="btn btn-primary btn-lg">Quero automatizar um processo <i class="fas fa-arrow-right"></i></a><small>Diagnóstico inicial sem compromisso.</small></div>
+                        <a href="#cases" class="btn btn-outline-light btn-lg">Ver um resultado</a>
+                    </div>
+                    <div class="hero-proof"><span>✓ Menos trabalho repetitivo</span><span>✓ Menos erros operacionais</span><span>✓ Mais rastreabilidade</span></div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="automation-map">
+                        <span class="eyebrow">UM FLUXO MAIS INTELIGENTE</span>
+                        <div><b>01</b><span>Processo manual</span><i class="fas fa-arrow-right"></i></div>
+                        <div><b>02</b><span>Automação sob medida</span><i class="fas fa-arrow-right"></i></div>
+                        <div><b>03</b><span>Resultado acompanhado</span><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="automation-intro" id="o-que-automatizar">
+            <div class="container-xl">
+                <div class="section-heading"><div><span class="eyebrow dark">ONDE EXISTE OPORTUNIDADE</span><h2>Se a equipe repete, o processo merece ser analisado.</h2></div><p>Automação não é substituir decisões. É retirar da rotina o trabalho previsível para que as pessoas se concentrem no que exige contexto, julgamento e relacionamento.</p></div>
+                <div class="automation-grid">
+                    <article><i class="fas fa-globe"></i><h3>Sistemas e portais</h3><p>Acessar plataformas, consultar informações, preencher formulários e consolidar resultados.</p></article>
+                    <article><i class="fas fa-file-excel"></i><h3>Arquivos e planilhas</h3><p>Ler, limpar, cruzar e gerar arquivos sem depender de copiar e colar todos os dias.</p></article>
+                    <article><i class="fas fa-envelope"></i><h3>Relatórios e alertas</h3><p>Organizar dados, enviar comunicações e sinalizar exceções para a equipe responsável.</p></article>
+                    <article><i class="fas fa-plug"></i><h3>Integrações</h3><p>Conectar APIs, bancos de dados e ferramentas para a informação circular com consistência.</p></article>
+                </div>
+            </div>
+        </section>
+        <section class="section automation-benefits" id="beneficios">
+            <div class="container-xl">
+                <div class="section-intro"><span class="eyebrow dark">RESULTADO DA AUTOMAÇÃO</span><h2>O ganho aparece na operação, não apenas na tecnologia.</h2><p>Mapeamos o fluxo, definimos as regras e criamos uma rotina que pode ser acompanhada e aprimorada.</p></div>
+                <div class="benefit-grid"><div><strong>01</strong><h3>Velocidade</h3><p>Rotinas executadas em minutos, com menos espera entre uma etapa e outra.</p></div><div><strong>02</strong><h3>Padronização</h3><p>As mesmas regras são aplicadas em cada execução, reduzindo variações.</p></div><div><strong>03</strong><h3>Controle</h3><p>Registros, alertas e visibilidade para saber o que aconteceu no processo.</p></div><div><strong>04</strong><h3>Escala</h3><p>Mais volume processado sem aumentar a carga manual na mesma proporção.</p></div></div>
+            </div>
+        </section>
+        <section class="section result-case automation-case" id="cases">
+            <div class="container-xl"><div class="case-box"><div class="case-number"><small>CASE REAL</small><strong>3×</strong><span>mais agilidade operacional</span></div><div class="case-content"><span class="eyebrow">RPA EM PYTHON</span><h2>De cerca de 1 hora para 20 minutos por execução.</h2><p>Uma rotina em sistemas judiciais exigia navegação, conferências e várias etapas manuais. Criamos uma automação com Python e Playwright para executar o fluxo, validar informações e reduzir o tempo operacional.</p><div class="case-results"><strong>RESULTADO</strong><span><i class="fas fa-check"></i> Aproximadamente 67% menos tempo</span><span><i class="fas fa-check"></i> Processo padronizado</span><span><i class="fas fa-check"></i> Menos tarefas repetitivas</span><span><i class="fas fa-check"></i> Mais capacidade para escalar</span></div></div></div></div>
+        </section>
+        <section class="section automation-process" id="processo">
+            <div class="container-xl"><div class="section-heading"><div><span class="eyebrow dark">COMO COMEÇAMOS</span><h2>Do diagnóstico à automação em produção.</h2></div><p>O escopo nasce do seu processo real. Assim, a solução é construída para funcionar no contexto da sua operação, com limites e exceções claros.</p></div><div class="process-grid"><div><span>01</span><h3>Diagnóstico</h3><p>Entendemos a rotina, o volume, as regras e os pontos de atrito.</p></div><div><span>02</span><h3>Desenho</h3><p>Definimos o que automatizar, o que manter sob análise humana e como medir o resultado.</p></div><div><span>03</span><h3>Construção</h3><p>Desenvolvemos, testamos e validamos o fluxo com dados e cenários reais.</p></div><div><span>04</span><h3>Acompanhamento</h3><p>Monitoramos a execução e evoluímos a solução conforme a operação muda.</p></div></div></div>
+        </section>
+        <section class="cta-section"><div class="container-xl"><div class="cta-box"><div><span class="eyebrow">PRÓXIMO PASSO</span><h2>Qual tarefa a sua equipe repete toda semana?</h2><p>Conte como o processo funciona hoje. Nós avaliamos onde a automação pode gerar impacto.</p></div><div class="cta-action"><a data-whatsapp target="_blank" rel="noopener" class="btn btn-light btn-lg"><i class="fab fa-whatsapp"></i> Falar sobre meu processo</a><small>Português ou English · Sem compromisso.</small></div></div></div></section>
+    </main>
+    <footer><div class="container-xl footer-bottom automation-footer"><span>© {% now "Y" %} GEST TECH MARINHO.</span><a href="/">Voltar para a página inicial</a></div></footer>
+    <a data-whatsapp target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script><script>document.querySelectorAll('[data-whatsapp]').forEach(function (link) { link.href = 'https://wa.me/5583998413751?text=Olá!%20Quero%20conversar%20sobre%20a%20automação%20de%20um%20processo.'; });</script>
+</body>
+</html>

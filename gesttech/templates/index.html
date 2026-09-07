@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/style.css' %}?v=20260905-1" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}?v=20260907-4" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,8 @@
                     type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="menu">
-                    <div class="navbar-nav ms-auto align-items-lg-center"><a href="#solucoes" class="nav-link"
+                        <div class="navbar-nav ms-auto align-items-lg-center"><a href="{% url 'automacao' %}" class="nav-link"
+                            data-i18n="navAutomation">Automação</a><a href="#solucoes" class="nav-link"
                             data-i18n="navSolutions">Soluções</a><a href="#cases" class="nav-link"
                             data-i18n="navCases">Cases</a><a href="#metodo" class="nav-link" data-i18n="navMethod">Como
                             trabalhamos</a><a href="#empresa" class="nav-link" data-i18n="navCompany">A empresa</a>
@@ -271,6 +272,36 @@
                 </div>
             </div>
         </section>
+        <section class="consulting-section" id="consultoria">
+            <div class="container-xl">
+                <div class="consulting-heading">
+                    <span class="eyebrow" data-i18n="consultingEyebrow">CONSULTORIA EM AUTOMAÇÃO</span>
+                    <h2 data-i18n="consultingTitle">Consultorias personalizadas</h2>
+                    <p data-i18n="consultingIntro">Do planejamento à execução, acompanhamos sua jornada de transformação operacional.</p>
+                </div>
+                <div class="consulting-roadmap">
+                    <div class="roadmap-line"></div>
+                    <article class="consulting-card">
+                        <div class="roadmap-marker">1</div>
+                        <div class="consulting-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3 data-i18n="consulting1Title">Mapeamento de processos</h3>
+                        <p data-i18n="consulting1Copy">Identificamos gargalos, padronizamos fluxos e otimizamos cada etapa para aumentar a eficiência operacional.</p>
+                    </article>
+                    <article class="consulting-card">
+                        <div class="roadmap-marker">2</div>
+                        <div class="consulting-icon"><i class="fas fa-rocket"></i></div>
+                        <h3 data-i18n="consulting2Title">Implantação assistida</h3>
+                        <p data-i18n="consulting2Copy">Acompanhamos a implementação, os testes e a adoção da solução para garantir resultados consistentes.</p>
+                    </article>
+                    <article class="consulting-card">
+                        <div class="roadmap-marker">3</div>
+                        <div class="consulting-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 data-i18n="consulting3Title">Análise de performance</h3>
+                        <p data-i18n="consulting3Copy">Monitoramos indicadores-chave e sugerimos melhorias contínuas baseadas em dados reais da operação.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
         <section class="section company" id="empresa">
             <div class="container-xl">
                 <div class="row g-5 align-items-center">
@@ -338,7 +369,7 @@
                     eficientes.</p>
             </div>
             <div>
-                <h4 data-i18n="footerNav">Navegação</h4><a href="#solucoes" data-i18n="navSolutions">Soluções</a><a
+                <h4 data-i18n="footerNav">Navegação</h4><a href="{% url 'automacao' %}" data-i18n="navAutomation">Automação</a><a href="#solucoes" data-i18n="navSolutions">Soluções</a><a
                     href="#cases" data-i18n="navCases">Cases</a><a href="#metodo" data-i18n="navMethod">Como
                     trabalhamos</a><a href="#empresa" data-i18n="navCompany">A empresa</a>
             </div>
@@ -346,8 +377,8 @@
                 <h4 data-i18n="footerContact">Contato comercial</h4><a href="tel:+5583998413751"><i
                         class="fas fa-phone-alt"></i> +55 83 99841-3751</a><a data-whatsapp target="_blank"
                     rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="footerWhatsapp">Falar pelo
-                        WhatsApp</span></a><a href="mailto:igormarinhosilva@gmail.com"><i class="fas fa-envelope"></i>
-                    igormarinhosilva@gmail.com</a>
+                        WhatsApp</span></a><a href="mailto:contact@gestcloud.com.br"><i class="fas fa-envelope"></i>
+                    contact@gestcloud.com.br</a>
             </div>
         </div>
         <div class="container-xl footer-bottom"><span>© {% now "Y" %} GEST TECH MARINHO. <span data-i18n="rights">Todos
@@ -356,7 +387,7 @@
             class="fab fa-whatsapp"></i></a><a href="#inicio" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{% static 'js/main.js' %}?v=20260905-1"></script>
+    <script src="{% static 'js/main.js' %}?v=20260907-2"></script>
 </body>
 
 </html>
