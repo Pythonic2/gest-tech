@@ -10,8 +10,6 @@ services:
       - PYTHONUNBUFFERED=1
     pull_policy: build
 
-    networks:
-      - pi_def
 networks:
   pi_default:
     external: true
