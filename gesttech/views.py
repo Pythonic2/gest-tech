@@ -85,3 +85,11 @@ class SobreView(TemplateView):
 
 class AutomationView(TemplateView):
     template_name = "automation.html"
+
+
+class PrivacyPolicyView(TemplateView):
+    template_name = "privacy_policy.html"
+
+
+class DataDeletionView(TemplateView):
+    template_name = "data_deletion.html"

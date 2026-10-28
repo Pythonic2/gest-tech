@@ -1,0 +1,41 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Exclusão de Dados | GEST TECH MARINHO</title>
+    <meta name="description" content="Solicite a exclusão de dados pessoais tratados pela GEST TECH MARINHO em serviços, aplicativos e integrações.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#071a2d">
+    <link rel="canonical" href="https://gestcloud.com.br/exclusao-de-dados/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}?v=20261027-1" rel="stylesheet">
+</head>
+<body class="legal-page">
+    <header class="legal-header short">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3 px-lg-5">
+            <div class="container-xl"><a href="/" class="navbar-brand"><span class="brand-mark">GT</span><span class="brand-name">GEST TECH <strong>MARINHO</strong></span></a><a href="/" class="btn btn-outline-light btn-sm">Página inicial</a></div>
+        </nav>
+        <div class="container-xl legal-heading"><span class="eyebrow"><i></i> PRIVACIDADE E LGPD</span><h1>Exclusão de dados</h1><p>Solicitação pública para dados tratados pela GEST TECH MARINHO</p></div>
+    </header>
+    <main class="legal-content">
+        <div class="container-xl">
+            <article class="legal-document deletion-document">
+                <section><h2>Como solicitar</h2><p>Você pode solicitar a exclusão dos seus dados pessoais sem necessidade de login ou autenticação em uma área administrativa.</p><ol><li>Envie um e-mail para <a href="mailto:contact@gestcloud.com.br?subject=Solicitação%20de%20exclusão%20de%20dados">contact@gestcloud.com.br</a>.</li><li>No assunto, informe “Solicitação de exclusão de dados”.</li><li>Informe seu nome completo, o e-mail ou telefone associado aos dados, o serviço ou aplicativo utilizado e uma breve descrição dos dados que deseja excluir.</li><li>Se possível, indique o nome da plataforma integrada, empresa cliente ou projeto relacionado, sem enviar documentos, senhas, tokens ou informações desnecessárias.</li></ol></section>
+
+                <section><h2>Dados processados por aplicativos ou integrações</h2><p>A solicitação também pode envolver dados recebidos por aplicações da GEST TECH, serviços automatizados, APIs ou plataformas externas, como plataformas de comunicação e redes sociais, quando utilizados em um projeto. Nossa equipe analisará quais dados estão sob responsabilidade da GEST TECH e poderá solicitar somente as informações necessárias para confirmar e localizar o registro.</p><p>Quando os dados forem controlados principalmente pela plataforma externa ou pela empresa cliente, forneceremos as instruções aplicáveis ou encaminharemos a solicitação, conforme o contexto. A exclusão realizada diretamente em uma plataforma externa pode ser necessária para concluir o pedido.</p></section>
+
+                <section><h2>Prazo de análise e limitações</h2><p>A solicitação será analisada para verificar sua abrangência e identificar os sistemas envolvidos. Alguns dados podem precisar ser preservados ou bloqueados por obrigações legais, segurança, prevenção a fraude, resolução de disputas ou execução de contratos em andamento. Nessas situações, explicaremos a base da permanência na medida aplicável e atenderemos com a menor retenção possível.</p><p>Revogação de consentimento não impede a manutenção de dados cujo tratamento tenha outra base legal aplicável ou que precise ser preservado por obrigação legal.</p></section>
+
+                <section><h2>Exercício de outros direitos</h2><p>Além da exclusão, você pode solicitar acesso, correção, oposição ou outros direitos previstos na LGPD pelo mesmo canal: <a href="mailto:contact@gestcloud.com.br">contact@gestcloud.com.br</a>.</p><p>Consulte nossa <a href="{% url 'politica-de-privacidade' %}">Política de Privacidade</a> para conhecer as categorias de dados, as finalidades, as bases legais e as práticas gerais de proteção.</p></section>
+            </article>
+        </div>
+    </main>
+    <footer><div class="container-xl footer-bottom"><span>© {% now "Y" %} GEST TECH MARINHO · CNPJ 62.391.324/0001-55</span><span><a href="{% url 'politica-de-privacidade' %}">Política de Privacidade</a> · <a href="/">Página inicial</a></span></div></footer>
+</body>
+</html>
